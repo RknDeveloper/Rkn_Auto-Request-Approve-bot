@@ -1,18 +1,16 @@
+#(©) @RknDeveloper
 
-from pyrogram import Client
-from pyrogram.errors import UserNotParticipant
-from pyrogram.errors.exceptions.flood_420 import FloodWait
-import random, asyncio
-import os, sys
-from config import rkn
+from configs import rkn1
+from pyrogram import Client 
 
-
-app = Client(
+rkn = Client(
     "approver",
-    api_id=rkn.API_ID,
-    api_hash=rkn.API_HASH,
-    bot_token=rkn.BOT_TOKEN
+    api_id=rkn1.API_ID,
+    api_hash=rkn1.API_HASH,
+    bot_token=rkn1.BOT_TOKEN,
+    plugins=dict(root='RknDeveloper')
 )
 
-print("RknDeveloper Bot Is Live ✨")
-app.run()
+
+print("Rkn_Auto-Request-Approve-bot ✅✅ BOT started successfully ✅✅")
+rkn.run()
