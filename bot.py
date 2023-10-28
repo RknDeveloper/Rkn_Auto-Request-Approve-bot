@@ -3,7 +3,7 @@
 from configs import rkn1
 from pyrogram import Client 
 
-rkn = Client(
+app = Client(
     "approver",
     api_id=rkn1.API_ID,
     api_hash=rkn1.API_HASH,
@@ -13,4 +13,4 @@ rkn = Client(
 
 
 print("Rkn_Auto-Request-Approve-bot ✅✅ BOT started successfully ✅✅")
-rkn.run()
+app.run()
