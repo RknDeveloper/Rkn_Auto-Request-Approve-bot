@@ -3,7 +3,7 @@
 from pyrogram import filters, Client, errors
 from pyrogram.errors import UserNotParticipant
 from pyrogram.errors.exceptions.flood_420 import FloodWait
-from database import all_users, all_groups, users, remove_user
+from RknDeveloper.untils.database import all_users, all_groups, users, remove_user
 from configs import rkn1
 import random, asyncio
 import os
