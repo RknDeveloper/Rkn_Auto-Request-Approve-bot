@@ -4,7 +4,7 @@ from RknDeveloper.untils.database import add_user
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 
 
-@Client.on_callback_query(filters.regex("chk"))
+@Client.on_callback_query(filters.regex("rkn_developer"))
 async def chk(bot, cb : CallbackQuery):
     try:
         await bot.get_chat_member(kn1.UPDATECHANNEL_ID, cb.from_user.id)
