@@ -1,5 +1,6 @@
 #(©) @RknDeveloper
 
+from pyrogram.types import Message
 from pyrogram import filters, Client, errors
 from pyrogram.errors import UserNotParticipant
 from pyrogram.errors.exceptions.flood_420 import FloodWait
