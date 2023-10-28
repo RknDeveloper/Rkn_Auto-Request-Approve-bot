@@ -85,9 +85,9 @@ async def op(bot, m :Message):
             [
                 [
                     InlineKeyboardButton("🥀 Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ 🥀", url=f"https://t.me/RknDeveloper")],[
-                    InlineKeyboardButton("𖤍 Tʀʏ Aɢᴀɪɴ ༗", "rkndeveloper")
+                    InlineKeyboardButton("𖤍 Tʀʏ Aɢᴀɪɴ ༗", "rkn_developer")
                 ]
             ]
         )
-        await m.reply_text("**rknDeveloper.**".format(rkn1.UPDATE_CHANNEL), reply_markup=key)
+        await m.reply_text("**💞 Pʟᴇᴀsᴇ Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ Tᴏ Usᴇ Tʜɪs Bᴏᴛ!. Iғ Yᴏᴜ Jᴏɪɴᴇᴅ Cʟɪᴄᴋ Tʀʏ Aɢᴀɪɴ Bᴜᴛᴛᴏɴ Tᴏ Cᴏɴғɪʀᴍ. 🥀**".format(rkn1.UPDATE_CHANNEL), reply_markup=key)
 
