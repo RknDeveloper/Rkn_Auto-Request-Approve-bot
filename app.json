@@ -1,0 +1,46 @@
+{
+    "name": "Auto Approove Bot",
+    "description": "Auto approove telegram group/channel join requests bot.",
+    "keywords": [
+        "Bot",
+        "Telegram ",
+        "Pyrogram "
+    ],
+    
+    "repository": "https://github.com/ImDenuwan/Auto-Approve-Bot",
+    "logo":"https://telegra.ph/file/a782e3bbbe40df8a4bb67.jpg",   
+    
+    "env": {
+    "API_ID": {
+      "description": "Enter your API_ID, get it from my.telegram.org/apps",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Enter your API_HASH, get it from my.telegram.org/apps",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Enter your Bot token, get it from @BotFather",
+      "required": true
+    },
+    "CHID": {
+      "description": "Enter your Force Subscribe channel ID",
+      "required": true
+    },
+    "FSUB": {
+      "description": "Enter your Force Subscribe channel Username without @",
+      "required": true
+    },
+    "SUDO": {
+      "description": "Enter Bot Owners IDS",
+      "required": true
+    }
+        
+  },
+  
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
