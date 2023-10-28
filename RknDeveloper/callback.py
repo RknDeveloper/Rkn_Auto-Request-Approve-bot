@@ -1,5 +1,6 @@
 from configs import rkn1
 from pyrogram import Client, filters
+from pyrogram.errors import UserNotParticipant
 from RknDeveloper.untils.database import add_user
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 
