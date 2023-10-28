@@ -7,7 +7,7 @@
         "Pyrogram "
     ],
     
-    "repository": "https://github.com/RknDeveloper/Rkn_Auto-Approve-Bot",
+    "repository": "https://github.com/RknDeveloper/Rkn_Auto-Request-Approve-bot",
     "logo":"https://graph.org/file/e846f9375e9d4f4975ce4.jpg",   
     
     "env": {
