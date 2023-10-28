@@ -1,7 +1,7 @@
 import os, sys
 from pyrogram import Client, filters
 from RknDeveloper.untils.database import all_users, all_groups
-from config import rkn1
+from configs import rkn1
 
 
 @Client.on_message(filters.command("rknusers") & filters.user(rkn1.ADMIN))
