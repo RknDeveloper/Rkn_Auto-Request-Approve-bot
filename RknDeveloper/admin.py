@@ -1,6 +1,6 @@
 import os, sys
 from pyrogram import Client, filters
-from database import all_users, all_groups
+from RknDeveloper.untils.database import all_users, all_groups
 from config import rkn1
 
 
