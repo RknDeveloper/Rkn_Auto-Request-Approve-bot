@@ -72,12 +72,12 @@ async def op(bot, m :Message):
             keyboar = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("💁‍♂️ 💁‍♂️", url="https://t.me/Rkn_AutoRequestApprovebot?start=start")
+                        InlineKeyboardButton("Pʀɪᴠᴀᴛᴇ", url="https://t.me/Rkn_AutoRequestApprovebot?start=start")
                     ]
                 ]
             )
             add_group(m.chat.id)
-            await m.reply_text("**🦊 Hello {}!\n**".format(m.from_user.first_name), reply_markup=keyboar)
+            await m.reply_text("**❣️ Hᴇʟʟᴏ {}!\n\nWʀɪᴛᴇ Mᴇ Pʀɪᴠᴀᴛᴇ Fᴏʀ Mᴏʀᴇ Dᴇᴛᴀɪʟs.**".format(m.from_user.first_name), reply_markup=keyboar)
         print(m.from_user.first_name +" Is started Your Bot!")
 
     except UserNotParticipant:
