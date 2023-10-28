@@ -1,5 +1,5 @@
 {
-    "name": "Auto Approove Bot",
+    "name": "Rkn Auto Request Approove Bot",
     "description": "Auto approove telegram group/channel join requests bot.",
     "keywords": [
         "Bot",
@@ -7,7 +7,7 @@
         "Pyrogram "
     ],
     
-    "repository": "https://github.com/ImDenuwan/Auto-Approve-Bot",
+    "repository": "https://github.com/RknDeveloper/Rkn_Auto-Request-Approve-bot",
     "logo":"https://telegra.ph/file/a782e3bbbe40df8a4bb67.jpg",   
     
     "env": {
@@ -23,15 +23,15 @@
       "description": "Enter your Bot token, get it from @BotFather",
       "required": true
     },
-    "CHID": {
+    "UPDATECHANNEL_ID": {
       "description": "Enter your Force Subscribe channel ID",
       "required": true
     },
-    "FSUB": {
+    "UPDATE_CHANNEL": {
       "description": "Enter your Force Subscribe channel Username without @",
       "required": true
     },
-    "SUDO": {
+    "ADMIN": {
       "description": "Enter Bot Owners IDS",
       "required": true
     }
