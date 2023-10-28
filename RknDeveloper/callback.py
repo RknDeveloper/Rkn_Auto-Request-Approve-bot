@@ -8,7 +8,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 @Client.on_callback_query(filters.regex("rkn_developer"))
 async def chk(bot, cb : CallbackQuery):
     try:
-        await bot.get_chat_member(kn1.UPDATECHANNEL_ID, cb.from_user.id)
+        await bot.get_chat_member(rkn1.UPDATECHANNEL_ID, cb.from_user.id)
         if cb.message.chat.type == enums.ChatType.PRIVATE:
             keyboard = InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
