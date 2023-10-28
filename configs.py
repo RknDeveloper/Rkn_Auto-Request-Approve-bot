@@ -12,4 +12,4 @@ class Config:
     RKN_PIC = os.environ.get("RKN_PIC", "https://graph.org/file/e846f9375e9d4f4975ce4.jpg")
     BOT_USERNAME = os.environ.get("BOT_USERNAME","")
     
-rkn = Config()
+rkn1 = Config()
