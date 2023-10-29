@@ -6,8 +6,11 @@
 
 👾 Hey I'll Accept telegram join requests. Easy to use and simple.
 
-## 🚀 Demo Bot
-- [@Rkn_Auto_acceptsjoinrequestsbot](https://t.me/Rkn_AutoRequestApprovebot)
+### Sᴀᴍᴩʟᴇ Bᴏᴛ (Official RKN Rename Bot)
+
+<p align="center">
+🤖 <a href="http://t.me/Rkn_AutoRequestApprovebot"><img title="Telegram" src="https://img.shields.io/static/v1?label=RKN+AUTO+REQUEST&message=APROVE+BOT&color=blue-green"></a> 🤖
+</p>
 
 <h2>〽️ Deploy Me </h2> 
 
@@ -58,6 +61,7 @@
   - `BOT_TOKEN` - Your Bot Token. Get it from [Here](https://t.me/BotFather)
   - `UPDATECHANNEL_ID` - Your Force subscribe channel id Get it from @MissRose_Bot
   - `UPDATE_CHANNEL` - Force subscribe channel username without `@`
+  - `LOG_CHANNEL` - Bot Logs Sending Channel. If You Don't Need This To Remove This Variable In Your Server
   - `ADMIN` - bot owners Id/ ids ( for broadcast and stats cmds). for multiple use space.
 
   Available Commond:-
