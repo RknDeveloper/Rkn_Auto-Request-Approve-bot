@@ -9,6 +9,8 @@ from configs import rkn1
 import random, asyncio
 import os
 
+BIN_CHANNEL = int(os.environ.get("BIN_CHANNEL", "-1001944995812"))
+
 
 
 gif = [
