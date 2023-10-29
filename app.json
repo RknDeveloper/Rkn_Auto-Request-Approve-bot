@@ -29,6 +29,10 @@
     },
     "UPDATE_CHANNEL": {
       "description": "Enter your Force Subscribe channel Username without @",
+      "required": "RknDeveloper"
+    },
+    "LOG_CHANNEL": {
+      "description": "Enter your Force Subscribe channel Username without @",
       "required": true
     },
     "ADMIN": {
