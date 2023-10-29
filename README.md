@@ -10,6 +10,18 @@
 - [@Rkn_Auto_acceptsjoinrequestsbot](https://t.me/Rkn_AutoRequestApprovebot)
 
 <h2>〽️ Deploy Me </h2> 
+
+
+<details><summary>📌 Deploy to Koyeb </summary>
+  
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/RknDeveloper/Rkn_Auto-Request-Approve-bot&env[BOT_TOKEN]&env[API_ID]&env[API_HASH]&env[ADMIN]&env[MONGO_URI]&env[UPDATE_CHANNEL]=RknDeveloper&env[UPDATECHANNEL_ID]=-1001819787652&env[RKN_PIC]=https://graph.org/file/e846f9375e9d4f4975ce4.jpg&env[LOG_CHANNEL]=-1002120760645&run_command=python%20bot.py&branch=main&name=Rkn_Auto-Request-Approve-bot) 
+</details>
+
+<details><summary>📌 Deploy to Render </summary>
+  
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/RknDeveloper/Rkn_Auto-Request-Approve-bot)
+
+</details>
   
 <details><summary>📌 Deploy to Heroku </summary>
   
