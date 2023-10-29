@@ -26,7 +26,7 @@
 
 
   ```ssh
-  git clone https://github.com/ImDenuwan/Auto-Approve-Bot
+  git clone https://github.com/RknDeveloper/Rkn_Auto-Request-Approve-bot
   pip3 install -r requirements.txt
   # fill config.py vars
   python3 bot.py
