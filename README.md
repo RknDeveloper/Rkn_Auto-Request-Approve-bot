@@ -6,7 +6,7 @@
 
 👾 Hey I'll Accept telegram join requests. Easy to use and simple.
 
-### Sᴀᴍᴩʟᴇ Bᴏᴛ (Official RKN Rename Bot)
+### Sᴀᴍᴩʟᴇ Bᴏᴛ (Official Demo Bot)
 
 <p align="center">
 🤖 <a href="http://t.me/Rkn_AutoRequestApprovebot"><img title="Telegram" src="https://img.shields.io/static/v1?label=RKN+AUTO+REQUEST&message=APROVE+BOT&color=blue-green"></a> 🤖
