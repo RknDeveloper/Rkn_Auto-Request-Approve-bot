@@ -72,6 +72,8 @@ broadcast - Broadcast Massage Send All Users In Bot.
 fd_broadcast - Broadcast massage Forward Not Remove.
 restart - Bot Restart & Re-Deploy Server.
 ```
-  
-  
+
+ ## ❣️Thanks To
+ 
+- Thanks To [RknDeveloper](https://github.com/RknDeveloper) who have edited and modified this repo as now it is. (It's me 😂)
 
