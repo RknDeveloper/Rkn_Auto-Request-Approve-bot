@@ -9,6 +9,8 @@ class Config:
     UPDATECHANNEL_ID = int(getenv("UPDATECHANNEL_ID", "-1001819787652"))
     ADMIN = list(map(int, getenv("ADMIN").split()))
     MONGO_URI = getenv("MONGO_URI", "")
+    BIN_CHANNEL = int(os.environ.get("BIN_CHANNEL", "-1001944995812"))
+    
     PORT = os.environ.get("PORT", "8080")
     RKN_PIC = os.environ.get("RKN_PIC", "https://graph.org/file/e846f9375e9d4f4975ce4.jpg")
     BOT_USERNAME = os.environ.get("BOT_USERNAME","")
