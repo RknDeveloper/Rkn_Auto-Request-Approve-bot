@@ -1,5 +1,9 @@
 # Rkn_Auto-Request-Approve-bot
 
+<p align="center">
+  <img src="https://graph.org/file/9dc402f2ba612e3f6dfbf.jpg" alt="RKN RENAME BOT V2">
+</p>
+
 👾 Hey I'll Accept telegram join requests. Easy to use and simple.
 
 ## 🚀 Demo Bot
