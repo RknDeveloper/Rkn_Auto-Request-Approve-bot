@@ -12,7 +12,7 @@ async def chk(bot, cb : CallbackQuery):
         if cb.message.chat.type == enums.ChatType.PRIVATE:
             keyboard = InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
-                InlineKeyboardButton("─※ ·Hᴇʟᴘ· ※─", callback_data = "help")
+                InlineKeyboardButton("─※ ·Hᴇʟᴘ· ※─", callback_data = "about")
                     ],[
                 InlineKeyboardButton("𖣘 Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ", url="https://t.me/RknDeveloper"),
                 InlineKeyboardButton("⚘ Sᴜᴘᴘᴏʀᴛ ⚘", url="https://t.me/RknDeveloperSupport")
@@ -27,3 +27,22 @@ async def chk(bot, cb : CallbackQuery):
         print(cb.from_user.first_name +" Is started Your Bot!")
     except UserNotParticipant:
         await cb.answer(f"Hey, {cb.from_user.first_name}\nI Lɪᴋᴇ Yᴏᴜʀ Sᴍᴀʀᴛɴᴇss, Bᴜᴛ Dᴏɴ'ᴛ Bᴇ Oᴠᴇʀsᴍᴀʀᴛ! 🤓 \nJᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ Fɪʀsᴛ 🥇‌‌", show_alert=True)
+
+@Client.on_callback_query(filters.regex('about'))
+async def purchase(bot,update):
+	await update.message.edit_text(
+	    text = """<b>» Mʏ Nᴀᴍᴇ: {}
+‣ Cʀᴇᴀᴛᴏʀ : <a href='tg://settings'>ᴛʜɪs Pᴇʀsᴏɴ</a>
+‣ Dᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/RknDeveloperr'>ʀᴋɴ Dᴇᴠᴇʟᴏᴘᴇʀ</a>
+‣ Lɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org'>Pʏʀᴏɢʀᴀᴍ</a>
+‣ Lᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org'>Pʏᴛʜᴏɴ 3</a>
+‣ Dᴀᴛᴀ Bᴀsᴇ : <a href='https://www.mongodb.com/'>Mᴏɴɢᴏ Dʙ</a>
+‣ Bᴏᴛ Sᴇʀᴠᴇʀ : ‣[Vᴘs]‣<a href='https://app.koyeb.com/'>[Kᴏʏᴇʙ]</a>
+‣ Bᴜɪʟᴅ Sᴛᴀᴛᴜs : ᴠ3.8.3 [sᴛᴀʙʟᴇ]</b>""",
+	    reply_markup=InlineKeyboardMarkup( [[
+               #⚠️ don't change source code & source link ⚠️ #
+               InlineKeyboardButton("→ Bᴀᴄᴋ", callback_data = "rkn_developer")],[
+               InlineKeyboardButton("→ Bᴀᴄᴋ", callback_data = "rkn_developer")
+               ]]
+            )
+    )
