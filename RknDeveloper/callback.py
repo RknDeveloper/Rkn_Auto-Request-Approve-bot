@@ -29,19 +29,20 @@ async def chk(bot, cb : CallbackQuery):
         await cb.answer(f"Hey, {cb.from_user.first_name}\nI Lɪᴋᴇ Yᴏᴜʀ Sᴍᴀʀᴛɴᴇss, Bᴜᴛ Dᴏɴ'ᴛ Bᴇ Oᴠᴇʀsᴍᴀʀᴛ! 🤓 \nJᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ Fɪʀsᴛ 🥇‌‌", show_alert=True)
 
 @Client.on_callback_query(filters.regex('about'))
-async def purchase(bot,update):
+async def about(bot,update):
 	await update.message.edit_text(
-	    text = """<b>» Mʏ Nᴀᴍᴇ: {}
+	    text = """<b>» Mʏ Nᴀᴍᴇ: <a href='https://t.me/Rkn_AutoRequestApprovebot'>Pʏᴛʜᴏɴ 3</a>
 ‣ Cʀᴇᴀᴛᴏʀ : <a href='tg://settings'>ᴛʜɪs Pᴇʀsᴏɴ</a>
 ‣ Dᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/RknDeveloperr'>ʀᴋɴ Dᴇᴠᴇʟᴏᴘᴇʀ</a>
 ‣ Lɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org'>Pʏʀᴏɢʀᴀᴍ</a>
 ‣ Lᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org'>Pʏᴛʜᴏɴ 3</a>
 ‣ Dᴀᴛᴀ Bᴀsᴇ : <a href='https://www.mongodb.com/'>Mᴏɴɢᴏ Dʙ</a>
 ‣ Bᴏᴛ Sᴇʀᴠᴇʀ : ‣[Vᴘs]‣<a href='https://app.koyeb.com/'>[Kᴏʏᴇʙ]</a>
+‣ Sᴏᴜʀᴄᴇ : <a href='https://github.com/RknDeveloper/Rkn_Auto-Request-Approve-bot'> Sᴏᴜʀᴄᴇ Cᴏᴅᴇ </a>
 ‣ Bᴜɪʟᴅ Sᴛᴀᴛᴜs : ᴠ3.8.3 [sᴛᴀʙʟᴇ]</b>""",
 	    reply_markup=InlineKeyboardMarkup( [[
                #⚠️ don't change source code & source link ⚠️ #
-               InlineKeyboardButton("→ Bᴀᴄᴋ", callback_data = "rkn_developer")],[
+               InlineKeyboardButton("❣️ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ ❣️", url="https://github.com/RknDeveloper/Rkn_Auto-Request-Approve-bot")],[
                InlineKeyboardButton("→ Bᴀᴄᴋ", callback_data = "rkn_developer")
                ]]
             )
