@@ -18,5 +18,6 @@ async def dbtool(_, m : Message):
 
 @Client.on_message(filters.command("restart") & filters.user(rkn1.ADMIN))
 async def restart_bot(b, m):
-    await m.reply_text("🔄__Rᴇꜱᴛᴀʀᴛɪɴɢ.....__")
+    rknz = await m.reply_text("🔄__Rᴇꜱᴛᴀʀᴛɪɴɢ.....__")
     os.execl(sys.executable, sys.executable, *sys.argv)
+    await rknz.edit(f"🐾 Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ Cᴏᴍᴘʟᴇᴛᴇ 🐾")
