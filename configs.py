@@ -7,12 +7,12 @@ class Config:
     BOT_TOKEN = getenv("BOT_TOKEN", "1234567891:rkndeveloperDEhdhyjjvjjftSEW")
     UPDATE_CHANNEL = getenv("UPDATE_CHANNEL", "RknDeveloper")
     UPDATECHANNEL_ID = int(getenv("UPDATECHANNEL_ID", "-1001819787652"))
-    ADMIN = list(map(int, getenv("ADMIN").split()))
+    ADMIN = list(map(int, getenv("ADMIN", "6151758586").split()))
     MONGO_URI = getenv("MONGO_URI", "")
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002120760645"))
     
     PORT = os.environ.get("PORT", "8080")
     RKN_PIC = os.environ.get("RKN_PIC", "https://graph.org/file/e846f9375e9d4f4975ce4.jpg")
-    BOT_USERNAME = os.environ.get("BOT_USERNAME","")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME","Rkn_AutoRequestApprovebot")
     
 rkn1 = Config()
