@@ -2,3 +2,4 @@ pyrogram
 TgCrypto
 pymongo[srv]
 aiohttp
+flask
