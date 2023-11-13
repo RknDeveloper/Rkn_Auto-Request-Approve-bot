@@ -1,10 +1,14 @@
 #(©) @RknDeveloper
 
+import time, os
 import logging
 import logging.config
 from aiohttp import web
+from datetime import datetime
+from pytz import timezone
+from pyrogram.raw.all import layer
 from configs import rkn1
-from pyrogram import Client
+from pyrogram import Client, __version__
 from RknDeveloper.web_support import web_server
 
 logging.config.fileConfig('logging.conf')
@@ -23,22 +27,27 @@ class Bot(Client):
             plugins=dict(root='RknDeveloper')
              )
     async def start(self):
-       await super().start()
-       me = await self.get_me()
-       self.mention = me.mention
-       self.username = me.username 
-       app = web.AppRunner(await web_server())
-       await app.setup()
-       bind_address = "0.0.0.0"
-       await web.TCPSite(app, bind_address, rkn1.PORT).start()
-       logging.info(f"{me.first_name} ✅✅ BOT started successfully ✅✅")
-
-       for id in rkn1.ADMIN:
+        await super().start()
+        me = await self.get_me()
+        self.mention = me.mention
+        self.username = me.username 
+        app = web.AppRunner(await web_server())
+        await app.setup()
+        bind_address = "0.0.0.0"
+        await web.TCPSite(app, bind_address, rkn1.PORT).start()
+        logging.info(f"{me.first_name} ✅✅ BOT started successfully ✅✅")
+        for id in rkn1.ADMIN:
             try:
                 await self.send_message(id, f"**__{me.first_name}  Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️__**")
+            except: pass
+        if rkn1.LOG_CHANNEL:
+            try:
+                curr = datetime.now(timezone("Asia/Kolkata"))
+                date = curr.strftime('%d %B, %Y')
+                time = curr.strftime('%I:%M:%S %p')
+                await self.send_message(rkn1.LOG_CHANNEL, f"**__{me.mention} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ !!**\n\n📅 Dᴀᴛᴇ : `{date}`\n⏰ Tɪᴍᴇ : `{time}`\n🌐 Tɪᴍᴇᴢᴏɴᴇ : `Asia/Kolkata`\n\n🉐 Vᴇʀsɪᴏɴ : `v{__version__} (Layer {layer})`</b>")                                
             except:
-                pass
-
+                print("Pʟᴇᴀꜱᴇ Mᴀᴋᴇ Tʜɪꜱ Iꜱ Aᴅᴍɪɴ Iɴ Yᴏᴜʀ Lᴏɢ Cʜᴀɴɴᴇʟ")
     async def stop(self, *args):
       await super().stop()      
       logging.info("Bot Stopped 🙄")
