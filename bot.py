@@ -1,5 +1,5 @@
 #(©) @RknDeveloper
-
+from pyrogram.types import BotCommand
 import time, os
 import logging
 import logging.config
@@ -36,6 +36,12 @@ class Bot(Client):
         bind_address = "0.0.0.0"
         await web.TCPSite(app, bind_address, rkn1.PORT).start()
         logging.info(f"{me.first_name} ✅✅ BOT started successfully ✅✅")
+        await self.set_bot_commands(
+                    [
+                        BotCommand("start", "Check that bot is alive or dead")
+                        
+                        ]
+        )
         for id in rkn1.ADMIN:
             try:
                 await self.send_message(id, f"**__{me.first_name}  Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️__**")
