@@ -31,10 +31,11 @@ class Bot(Client):
         me = await self.get_me()
         self.mention = me.mention
         self.username = me.username 
-        app = web.AppRunner(await web_server())
-        await app.setup()
-        bind_address = "0.0.0.0"
-        await web.TCPSite(app, bind_address, rkn1.PORT).start()
+        if rkn1.WEBHOOK:
+            app = web.AppRunner(await web_server())
+            await app.setup()
+            bind_address = "0.0.0.0"
+            await web.TCPSite(app, bind_address, rkn1.PORT).start()
         logging.info(f"{me.first_name} ✅✅ BOT started successfully ✅✅")
         await self.set_bot_commands(
                     [
