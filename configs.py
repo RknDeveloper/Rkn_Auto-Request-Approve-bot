@@ -14,5 +14,7 @@ class Config:
     PORT = os.environ.get("PORT", "8080")
     RKN_PIC = os.environ.get("RKN_PIC", "https://graph.org/file/e846f9375e9d4f4975ce4.jpg")
     BOT_USERNAME = os.environ.get("BOT_USERNAME","Rkn_AutoRequestApprovebot")
-    
+ # Subsprice Gif & Auto Request Accept
+    SUBSPRICE = os.environ.get("SUBSPRICE", "").split()
+
 rkn1 = Config()
