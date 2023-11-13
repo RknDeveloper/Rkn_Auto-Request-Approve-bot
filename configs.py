@@ -11,7 +11,11 @@ class Config:
     MONGO_URI = getenv("MONGO_URI", "")
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002120760645"))
     
+    #web response 
+    WEBHOOK = bool(os.environ.get("WEBHOOK", True))
+    BOT_UPTIME  = time.time()
     PORT = os.environ.get("PORT", "8080")
+    
     RKN_PIC = os.environ.get("RKN_PIC", "https://graph.org/file/e846f9375e9d4f4975ce4.jpg")
     BOT_USERNAME = os.environ.get("BOT_USERNAME","Rkn_AutoRequestApprovebot")
  # Subsprice Gif & Auto Request Accept
