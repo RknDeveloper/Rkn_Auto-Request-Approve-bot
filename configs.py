@@ -1,5 +1,5 @@
 from os import path, getenv
-import os
+import os, time 
 
 class Config:
     API_ID = int(getenv("API_ID", "0112234"))
