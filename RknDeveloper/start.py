@@ -10,21 +10,6 @@ import random, asyncio
 import os
 
 
-gif = [
-    'https://telegra.ph/file/a5a2bb456bf3eecdbbb99.mp4',
-    'https://telegra.ph/file/03c6e49bea9ce6c908b87.mp4',
-    'https://telegra.ph/file/9ebf412f09cd7d2ceaaef.mp4',
-    'https://telegra.ph/file/293cc10710e57530404f8.mp4',
-    'https://telegra.ph/file/506898de518534ff68ba0.mp4',
-    'https://telegra.ph/file/dae0156e5f48573f016da.mp4',
-    'https://telegra.ph/file/3e2871e714f435d173b9e.mp4',
-    'https://telegra.ph/file/714982b9fedfa3b4d8d2b.mp4',
-    'https://telegra.ph/file/876edfcec678b64eac480.mp4',
-    'https://telegra.ph/file/6b1ab5aec5fa81cf40005.mp4',
-    'https://telegra.ph/file/b4834b434888de522fa49.mp4'
-]
-
-
 # Main Process _ _ _ _ _ Users Send Massage 🥀__🥀 Please 😢 Give Credit
 
 @Client.on_chat_join_request(filters.group | filters.channel & ~filters.private)
@@ -38,7 +23,7 @@ async def approve(bot, m : Message):
             f"**--#NᴇᴡGʀᴏᴜᴘ @RknDeveloper--**\n\nCʜᴀɴɴᴇʟ & Gʀᴏᴜᴘ Iᴅ: {m.chat.id}\nTɪᴛʟᴇ: `{m.chat.title}`\nUɴ: @{m.chat.username}\n\nBʏ: {m.from_user.mention}"
         )
         await bot.approve_chat_join_request(op.id, kk.id)
-        img = random.choice(gif)
+        img = random.choice(rkn1.SUBSPRICE)
         await bot.send_video(kk.id,img, "**Hello {}!\nWelcome To {}\n\n__Pᴏᴡᴇʀᴅ Bʏ : @RknDeveloper__**".format(m.from_user.mention, m.chat.title), reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("✛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀɴɴᴇʟ ࿇", url="https://t.me/Rkn_AutoRequestApprovebot?startchannel=Bots4Sale&admin=invite_users+manage_chat")],[
                 InlineKeyboardButton("✛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ࿇", url="https://t.me/Rkn_AutoRequestApprovebot?startgroup=Bots4Sale&admin=invite_users+manage_chat")
                 
