@@ -37,6 +37,7 @@ class Bot(Client):
             bind_address = "0.0.0.0"
             await web.TCPSite(app, bind_address, rkn1.PORT).start()
         logging.info(f"{me.first_name} ✅✅ BOT started successfully ✅✅")
+        logging.info(rkn1.LOGO)
         await self.set_bot_commands(
                     [
                         BotCommand("start", "Check that bot is alive or dead")
