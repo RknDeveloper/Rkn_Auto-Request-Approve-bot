@@ -1,5 +1,5 @@
 #(©) @RknDeveloper
-from pyrogram.types import BotCommand
+#from pyrogram.types import BotCommand
 import time, os
 import logging
 import logging.config
