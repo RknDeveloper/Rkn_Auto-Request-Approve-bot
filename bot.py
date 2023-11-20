@@ -1,5 +1,5 @@
-#(©) @RknDeveloper
-#from pyrogram.types import BotCommand
+#(©) @RknDeveloper https://github.com/RknDeveloper/Rkn_Auto-Request-Approve-bot
+# Please Don't remove Credit 😢
 import time, os
 import logging
 import logging.config
@@ -7,7 +7,8 @@ from aiohttp import web
 from datetime import datetime
 from pytz import timezone
 from pyrogram.raw.all import layer
-from configs import rkn1, set_commands
+from configs import rkn1
+from RknDeveloper.untils.add import set_commands
 from pyrogram import Client, __version__
 from RknDeveloper.web_support import web_server
 
@@ -39,12 +40,6 @@ class Bot(Client):
         logging.info(f"{me.first_name} ✅✅ BOT started successfully ✅✅")
         logging.info(rkn1.LOGO)
         await set_commands(self)
-        #await self.set_bot_commands(
-                 #   [
-                     #   BotCommand("start", "Check that bot is alive or dead")
-                      #  
-                     #   ]
-       # )
         for id in rkn1.ADMIN:
             try:
                 await self.send_message(id, f"**__{me.first_name}  Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️__**")
