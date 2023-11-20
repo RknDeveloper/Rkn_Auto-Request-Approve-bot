@@ -29,3 +29,34 @@ class Config:
 ──────────  ──────────────────────────────"""
 
 rkn1 = Config()
+
+
+# Commond Automatic Set 📐
+#(©) @RknDeveloper Repo - https://github.com/RknDeveloper/Rkn_Auto-Request-Approve-bot 
+# Please Don't Remove Credit 🙏
+async def set_commands(app):
+    COMMANDS = [
+        BotCommand("start", "Used to start the bot."),
+        BotCommand("help", "Displays the help command."),
+        BotCommand("about", "Displays information about the bot."),
+        BotCommand("method", "Sets your preferred method."),
+        BotCommand("shortener_api", "Sets the shortener API."),
+        BotCommand("mdisk_api", "Sets the mDisk API."),
+        BotCommand("header", "Sets the header."),
+        BotCommand("footer", "Sets the footer."),
+        BotCommand("username", "Sets the username to replace others."),
+        BotCommand("banner_image", "Sets the banner image."),
+        BotCommand("me", "Displays information about the bot."),
+        BotCommand("base_site", "Changes the base site."),
+        BotCommand("include_domain", "Sets the included domain."),
+        BotCommand("exclude_domain", "Sets the excluded domain."),
+        BotCommand("stats", "Displays statistics of the server and bot."),
+        BotCommand("batch", "Converts link for multiple posts (Aᴅᴍɪɴ Oɴʟʏ)."),
+        BotCommand("logs", "Sends the log messages (Aᴅᴍɪɴ Oɴʟʏ)."),
+        BotCommand("restart", "Restarts or re-deploys the server (Aᴅᴍɪɴ Oɴʟʏ)."),
+        BotCommand("ban", "Bans users (Aᴅᴍɪɴ Oɴʟʏ)."),
+        BotCommand("unban", "Unbans users (Aᴅᴍɪɴ Oɴʟʏ)."),
+        BotCommand("info", "Gets user info (Aᴅᴍɪɴ Oɴʟʏ)."),
+    ]
+
+    await app.set_bot_commands(COMMANDS)
