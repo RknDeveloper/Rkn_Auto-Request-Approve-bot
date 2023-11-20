@@ -1,5 +1,6 @@
 from os import path, getenv
 import os, time 
+from pyrogram.types import BotCommand
 
 class Config:
     API_ID = int(getenv("API_ID", "0112234"))
