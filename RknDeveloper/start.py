@@ -28,6 +28,7 @@ async def approve(bot, m : Message):
                 InlineKeyboardButton("✛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ࿇", url="https://t.me/Rkn_AutoRequestApprovebot?startgroup=Bots4Sale&admin=invite_users+manage_chat")
                 
             ]])            )
+        add_user(m.from_user.id)
         await bot.send_message(
             rkn1.LOG_CHANNEL,
             f"**--Nᴇᴡ Uꜱᴇʀ Sᴛᴀʀᴛᴇᴅ Tʜᴇ Bᴏᴛ--**\n\nUꜱᴇʀ: {m.from_user.mention}\nIᴅ: `{m.from_user.id}`\nUɴ: @{m.from_user.username}"
