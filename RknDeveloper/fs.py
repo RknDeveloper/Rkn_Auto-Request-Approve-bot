@@ -1,9 +1,14 @@
-#  Telegram MTProto API Client Library for Pyrogram
-#  Copyright (C) 2017-present DigitalBotz <https://github.com/DigitalBotz>
-#  I am a telegram bot, I created it using pyrogram library. https://github.com/pyrogram
+# (c) @RknDeveloperr
+# Rkn Developer 
+# Don't Remove Credit 😔
+# Telegram Channel @RknDeveloper & @Rkn_Botz
+# Developer @RknDeveloperr
+# Special Thanks To (https://github.com/JayMahakal98)
+# Update Channel @Digital_Botz & @DigitalBotz_Support
+
 """
 Apache License 2.0
-Copyright (c) 2022  @RknDeveloper
+Copyright (c) 2022 @RknDeveloper
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -25,18 +30,26 @@ Repo Link : https://github.com/RknDeveloper/Rkn_Auto-Request-Approve-bot
 License Link : https://github.com/RknDeveloper/Rkn_Auto-Request-Approve-bot/blob/main/LICENSE
 """
 
-__name__ = "Auto-Request-Approve-Bot"
-__version__ = "2.0.0"
-__license__ = " Apache License, Version 2.0"
-__copyright__ = "Copyright (C) 2022-present Rkn Developer <https://github.com/RknDeveloper>"
-__programer__ = "<a href=https://github.com/RknDeveloper/Rkn_Auto-Request-Approve-bot>RknDeveloper</a>"
-__library__ = "<a href=https://github.com/pyrogram>Pyʀᴏɢʀᴀᴍ</a>"
-__language__ = "<a href=https://www.python.org/>Pyᴛʜᴏɴ 3</a>"
-__database__ = "<a href=https://cloud.mongodb.com/>Mᴏɴɢᴏ DB</a>"
-__developer__ = "<a href=https://t.me/Digital_Botz>Digital Botz</a>"
-__maindeveloper__ = "<a href=https://t.me/RknDeveloper>RknDeveloper</a>"
+# pyrogram imports
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.errors import UserNotParticipant
 
-# main copyright herders (©️)
-# I have been working on this repo since 2022
+async def force_sub(bot, message, sub_id):
+    chat = await bot.get_chat(int(sub_id))
+    try:
+        await bot.get_chat_member(sub_id, message.from_user.id)
+    except UserNotParticipant:
+        return await message.reply_text(f"👋 Hello {message.from_user.mention},\n\nPlease join my 'Updates Channel'. 😇", 
+        reply_markup=InlineKeyboardMarkup([[
+        InlineKeyboardButton(f'Join {chat.title}', url=chat.invite_link)
+        ]]))                      
+    except Exception as e:
+        pass
+        
 
-
+    
+# Rkn Developer 
+# Don't Remove Credit 😔
+# Telegram Channel @RknDeveloper & @Rkn_Botz
+# Developer @RknDeveloperr
+# Update Channel @Digital_Botz & @DigitalBotz_Support
