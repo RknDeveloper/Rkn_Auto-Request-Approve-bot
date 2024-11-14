@@ -6,7 +6,7 @@ services:
       - API_ID=${API_ID}
       - API_HASH=${API_HASH}
       - BOT_TOKEN=${BOT_TOKEN}
-      - UPDATECHANNEL_ID=${UPDATECHANNEL_ID}
+      - FORCE_SUB=${FORCE_SUB}
       - ADMIN=${ADMIN}
-      - UPDATE_CHANNEL=${UPDATE_CHANNEL}
-      - MONGO_URI=${MONGO_URI}
+      - DB_URL=${DB_URL}
+      - DB_NAME=${DB_NAME}

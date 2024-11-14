@@ -15,15 +15,13 @@ services:
         sync: false
       - key: API_HASH
         sync: false
-      - key: UPDATE_CHANNEL
-        sync: false
-      - key: UPDATECHANNEL_ID
+      - key: FORCE_SUB
         sync: false
       - key: LOG_CHANNEL
         sync: false
-      - key: MONGO_URI
+      - key: DB_URL
         sync: false
-      - key: RKN_PIC
+      - key: DB_NAME
         sync: false
       - key: ADMIN
         sync: false
